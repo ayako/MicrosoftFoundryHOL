@@ -12,10 +12,13 @@ Microsoft Foundry fundamental hands-on
 - 原著者および出典を明記してください
 
 Microsoft および Azure は Microsoft Corporation の商標です。
+
 本資料は Microsoft が公式に提供するものではありません。
 
 ------
 
 This material is provided under the Creative Commons Attribution‑NonCommercial‑ShareAlike 4.0 International license.
+
 This is not an official Microsoft document.
+
 Microsoft and Azure are trademarks of Microsoft Corporation.
