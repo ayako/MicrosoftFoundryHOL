@@ -21,7 +21,7 @@
 
 routing-agent の **手順**に以下をプロンプトを入力します。
 
-```text
+```txt
 入力されたトピックを以下の選択肢に分類してください。選択肢の回答のみを回答して
 - Microsoft
 - その他
@@ -93,22 +93,56 @@ routing-agent の **手順**に以下をプロンプトを入力します。
 ### 1-2. Microsoft情報調査エージェント
 
 今回は Grounding with Bing Custom Search を使ってWebから最新情報を取得します。
-Azure Portal からBing
+
+[Azure ポータル](https://portal.azure.com) を開き、画面上部の検索ボックスで "**bing**" と入力。表示された **Bing リソース** を選択します。
 
 ![](./images/2-1-07.png)
 
-Custom search
+**Bing リソース** の画面で、**+追加** をクリックして **+Grounding with Bing Custom Search** を選択します。
+
 ![](./images/2-1-08.png)
 
+**Create a Grounding with Bing Custom Search resource** の画面で必要情報を設定、確認します。
+
+- **サブスクリプション**: 今回使用する Azure サブスクリプションであることを確認 (異なる場合は正しいものを選択)
+- **リソース グループ**: Foundry を作成したリソースグループを選択
+- **名前**: Grounding with Bing Custom Search のリソース名。識別しやすい名前を入力 ("*Foundry名*-bingcustom" など)
+- **リージョン**: グローバル
+- **価格レベル**: Grounding with Bing Custom Search
+
+- **ご契約条件**: 「上記通知を読み、理解しました」にチェック
+
+画面左下の **[次へ]** をクリックし、最終確認画面へ進みます。
+
 ![](./images/2-1-09.png)
+
+「最終検証を実行しています．．．」というメッセージが表示され、設定内容の検証が行われます。問題なければ、画面左下の **[作成]** をクリックしてリソースのデプロイを開始します。
 
 ![](./images/2-1-10.png)
 
 デプロイが完了したら、**[リソースに移動]** をクリックして設定を行います。
+
 ![](./images/2-1-11.png)
 
+デプロイが完了した Grounding with Bing Custom Search の画面が開きます。左メニューバーから **> リソース管理** をクリックして開き、**Configurations** をクリックします。**Configrations** の画面中央の **[Create new configuration]** をクリックします。
+
 ![](./images/2-1-12.png)
+
+**[Create new configuration with Bing Custom Search]** の画面で、以下の情報を入力します。
+
+- **Configuration Name**: Bing Custom Search の設定名。**microsoft-search** など、識別しやすいものを入力
+- **Domains** > **Allowed domains**: 以下の 3種類の URL を入力。1行入力し終わったら、右端の **+** をクリックして入力を確定する
+
+   - https://learn.microsoft.com/
+   - https://www.microsoft.com/
+   - https://azure.microsoft.com/
+
+設定を入力したら、画面下部の **[Create new configration]** をクリックして、設定を保存します。
+
 ![](./images/2-1-13.png)
+
+**Configuration** の画面に、設定した Configuration が表示されれば、設定は完了です。
+
 ![](./images/2-1-14.png)
 
 
@@ -146,10 +180,12 @@ Microsoft Foundry Portal に戻って、トピック分類エージェントと�
 
 ![](./images/2-1-21.png)
 
+> Grounding with Bing Custom Search が作成できない、作成してもエージェントから正しく呼び出しができない場合は、代わりに Microsoft Learn MCP サーバーをツールに追加してください。[6. MCP サーバーを利用したエージェントの構築](./1_basicagent.md#6-mcp-サーバーを利用したエージェントの構築) の手順を参照)
+
 ### 1-3. Web情報調査エージェント
 
 トピック分類エージェントと同様に新規エージェントを作成します。(名前は **web-search-agent** として作成します。)
-[3. Web 検索エージェントの構築](./1_basicagent.md#3-web-検索エージェントの構築) と同じ手順で、手順の設定や Web 検索のツール追加を行います。
+[3. Web 検索エージェントの構築](./1_basicagent.md#3-web-検索エージェントの構築) と同じ手順で、手順の設定や **Web 検索** (または **Bing Search を使用したグラウンド**) のツール追加を行います。
 
 画面右側のプレイグラウンドでメッセージを送信して動作を確認します。
 画面右上の **[保存]** をクリックして、エージェントを保存します。
@@ -198,7 +234,7 @@ routing-agent に続けて **(+)** をクリックして、**If/Else** ブロッ
 
 **条件** の枠をクリックして、以下の条件文を入力します。
 
-```text
+```txt
 Local.RoutingResult.Type = "Microsoft"
 ```
 
