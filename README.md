@@ -8,7 +8,8 @@ Microsoft Foundry fundamental hands-on
 |---|---|---|
 | 1 | [基本のエージェントを作成する](./1_basicagent.md) | Microsoft Foundry ポータルを使って基本的なエージェントを作成し、Web 検索や MCP サーバーなどのツールを追加する方法を学びます。 |
 | 2 | [マルチエージェントを作成する](./2_multiagent.md) | 専門のエージェントをワークフローで連携させるマルチエージェントシステムをポータル上で構築する方法を学びます。 |
-| 3 | [Agent Framework による Agent 開発](./3_agentframework.md) | Azure AI Projects SDK (Agent Framework) を使って、プログラムからエージェントを作成・実行する方法を学びます。 |
+| 3 | [Agent Framework による Agent 開発 (Python)](./3_agentframework_python.md) | Azure AI Projects SDK (Python) を使って、プログラムからエージェントを作成・実行する方法を学びます。 |
+| 4 | [Agent Framework による Agent 開発 (C#)](./4_agentframework_csharp.md) | Azure AI Projects SDK (C#/.NET) を使って、プログラムからエージェントを作成・実行する方法を学びます。 |
 
 
 # ライセンス

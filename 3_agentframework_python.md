@@ -1,6 +1,6 @@
-# Microsoft Agent Framework による Agent 開発
+# Microsoft Agent Framework による Agent 開発 (Python)
 
-Azure AI Projects SDK (Microsoft Agent Framework) を使って、プログラムからシンプルなエージェントおよびマルチエージェントワークフローを作成する方法を学びます。
+Azure AI Projects SDK (Python) を使って、プログラムからシンプルなエージェントおよびマルチエージェントワークフローを作成する方法を学びます。
 
 ---
 
