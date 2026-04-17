@@ -2,10 +2,10 @@
 
 ## 1. Azure ポータルから Microsoft Foundry リソースを作成
 
-[Azure ポータル](https://portal.azure.com) を開き、画面上部の検索ボックスで "foundry" と入力。表示された **Azure AI Foundry** を選択します。
+[Azure ポータル](https://portal.azure.com) を開き、画面上部の検索ボックスで "foundry" と入力。表示された **Microsoft Foundry** を選択します。
 ![](./images/1-1-01.png)
 
-**Microsoft Foundry** のページが表示されたら、右ペインに表示された *Azure AI Foundry のリソース作成* の欄にある **[リソースの作成]** をクリックします。
+**Microsoft Foundry** のページが表示されたら、右ペインに表示された *Microsoft Foundry のリソース作成* の欄にある **[リソースの作成]** をクリックします。
 ![](./images/1-1-02.png)
 
 **Create an Foundry Resource** のページで必要な情報を入力、設定していきます。

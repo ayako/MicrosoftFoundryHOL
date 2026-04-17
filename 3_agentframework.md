@@ -1,13 +1,15 @@
 # Microsoft Agent Framework による Agent 開発
 
-Azure AI Projects SDK (Microsoft Agent Framework) を使って、プログラムからエージェントを作成・実行する方法を学びます。
+Microsoft Agent Framework SDK を使って、プログラムからエージェントを作成・実行する方法を学びます。
 
 ## ハンズオンコンテンツ一覧
 
-| No. | ファイル | 説明 |
-|---|---|---|
-| 3.1 | [Agent Framework による Agent 開発 (C#)](./3.1_agentframework_csharp.md) | Azure AI Projects SDK (C#/.NET) を使って、プログラムからエージェントを作成・実行する方法を学びます。 |
-| 3.2 | [Agent Framework による Agent 開発 (Python)](./3.2_agentframework_python.md) | Azure AI Projects SDK (Python) を使って、プログラムからエージェントを作成・実行する方法を学びます。 |
+| No. | ドキュメント | Notebook | 説明 |
+|---|---|---|---|
+| 3.1 | [Agent Framework による Agent 開発 (C#)](./3_AgentFramework/3.1_agentframework_csharp.md) | [C# Notebook](./3_AgentFramework/3.1_agentframework_csharp.ipynb) | Microsoft Agent Framework SDK (C#/.NET) を使って、プログラムからエージェントを作成・実行する方法を学びます。 |
+| 3.2 | [Agent Framework による Agent 開発 (Python)](./3_AgentFramework/3.2_agentframework_python.md) | [Python Notebook](./3_AgentFramework/3.2_agentframework_python.ipynb) | Microsoft Agent Framework SDK (Python) を使って、プログラムからエージェントを作成・実行する方法を学びます。 |
+
+サンプルの環境変数ファイルは [./3_AgentFramework/.env.sample](./3_AgentFramework/.env.sample) を参照してください。
 
 ## 前提条件
 
