@@ -2,6 +2,15 @@
 Microsoft Foundry fundamental hands-on
 
 
+## コンテンツ一覧
+
+| # | タイトル | 内容 |
+|---|---|---|
+| 1 | [基本のエージェントを作成する](./1_basicagent.md) | Microsoft Foundry ポータルを使って基本的なエージェントを作成し、Web 検索や MCP サーバーなどのツールを追加する方法を学びます。 |
+| 2 | [マルチエージェントを作成する](./2_multiagent.md) | 専門のエージェントをワークフローで連携させるマルチエージェントシステムをポータル上で構築する方法を学びます。 |
+| 3 | [Agent Framework による Agent 開発](./3_agentframework.md) | Microsoft Agent Framework SDK を使って、プログラムからエージェントを作成・実行する方法を学びます。 |
+
+
 # ライセンス
 
 本資料は Creative Commons Attribution‑NonCommercial‑ShareAlike 4.0 International (CC BY‑NC‑SA 4.0) ライセンスの下で公開されています。
